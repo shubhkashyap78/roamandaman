@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoamAndaman - Andaman Nicobar Tourism</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-umbrella-beach"></i>
+                <span>RoamAndaman</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#ferries">Ferries</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Paradise - Andaman & Nicobar Islands</h1>
+            <p class="hero-subtitle">Dream Vacations, Unforgettable Memories</p>
+            <a href="#packages" class="btn-primary">Explore Packages</a>
+        </div>
+        
+        <!-- Quick Booking Form -->
+        <div class="quick-booking-form">
+            <div class="form-header">
+                <h3><i class="fas fa-calendar-check"></i> Quick Booking</h3>
+                <p>Plan Your Dream Trip</p>
+            </div>
+            <form class="booking-form">
+                <input type="text" placeholder="Full Name *" required>
+                <input type="email" placeholder="Email *" required>
+                <input type="tel" placeholder="Phone *" required>
+                
+                <div class="form-row">
+                    <select required>
+                        <option value="">Package Type</option>
+                        <option value="honeymoon">Honeymoon</option>
+                        <option value="family">Family</option>
+                        <option value="group">Group</option>
+                        <option value="ltc">LTC</option>
+                        <option value="budget">Budget</option>
+                        <option value="corporate">Corporate</option>
+                    </select>
+                    <select required>
+                        <option value="">Duration</option>
+                        <option value="3n4d">3N/4D</option>
+                        <option value="4n5d">4N/5D</option>
+                        <option value="5n6d">5N/6D</option>
+                        <option value="6n7d">6N/7D</option>
+                        <option value="7n8d">7N/8D</option>
+                        <option value="8n9d">8N/9D</option>
+                    </select>
+                </div>
+                
+                <div class="form-row">
+                    <input type="date" required>
+                    <select required>
+                        <option value="">Adults</option>
+                        <option value="1">1 Adult</option>
+                        <option value="2">2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                        <option value="5+">5+ Adults</option>
+                    </select>
+                </div>
+                
+                <input type="text" placeholder="Budget (Optional)">
+                <textarea placeholder="Special Requests (Optional)" rows="2"></textarea>
+                
+                <button type="submit" class="btn-quick-book">
+                    <i class="fas fa-paper-plane"></i> Send Inquiry
+                </button>
+            </form>
+        </div>
+        
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Safe & Secure</h3>
+                    <p>100% Safe Travel Experience</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Round the Clock Assistance</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-tag"></i>
+                    <h3>Best Prices</h3>
+                    <p>Affordable Tour Packages</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Expert Guides</h3>
+                    <p>Professional Tour Guides</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="packages-bg-decoration">
+            <div class="decoration-circle circle-1"></div>
+            <div class="decoration-circle circle-2"></div>
+            <div class="decoration-circle circle-3"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fas fa-fire"></i> Hot Deals</span>
+                <h2>Popular Tour Packages</h2>
+                <p>Choose Your Perfect Package According to Your Budget & Preference</p>
+                <div class="section-divider">
+                    <span></span>
+                    <i class="fas fa-umbrella-beach"></i>
+                    <span></span>
+                </div>
+            </div>
+            
+            <!-- Package Filter Tabs -->
+            <div class="package-filters">
+                <button class="filter-btn" data-filter="honeymoon">
+                    <i class="fas fa-heart"></i> Honeymoon
+                </button>
+                <button class="filter-btn" data-filter="family">
+                    <i class="fas fa-users"></i> Family
+                </button>
+                <button class="filter-btn" data-filter="group">
+                    <i class="fas fa-user-friends"></i> Group
+                </button>
+                <button class="filter-btn" data-filter="ltc">
+                    <i class="fas fa-id-card"></i> LTC
+                </button>
+                <button class="filter-btn" data-filter="budget">
+                    <i class="fas fa-wallet"></i> Budget
+                </button>
+                <button class="filter-btn" data-filter="corporate">
+                    <i class="fas fa-briefcase"></i> Corporate
+                </button>
+            </div>
+            
+            <div class="package-grid">
+                <!-- Honeymoon 3N/4D -->
+                <div class="package-card" data-category="honeymoon">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #e91e8c, #ff6b9d);"><span><i class="fas fa-heart"></i> Honeymoon</span></div>
+                    <div class="package-image">
+                        <img src="andaman2.jpg" alt="Honeymoon 3N4D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-heart"></i></span><span><i class="fas fa-spa"></i></span><span><i class="fas fa-cocktail"></i></span><span><i class="fas fa-hotel"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #e91e8c, #ff6b9d);">3N / 4D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3>Honeymoon Package</h3>
+                            <div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>5.0 (312 reviews)</span></div>
+                        </div>
+                        <p class="package-description">Port Blair + Havelock Island romantic getaway with beach dinner and couple spa.</p>
+                        <div class="package-meta">
+                            <span><i class="fas fa-clock"></i> 3 Nights / 4 Days</span>
+                            <span><i class="fas fa-users"></i> Couples Only</span>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> Radhanagar Beach Visit</li>
+                            <li><i class="fas fa-check-circle"></i> Couple Spa Session</li>
+                            <li><i class="fas fa-check-circle"></i> Candlelight Dinner</li>
+                            <li><i class="fas fa-check-circle"></i> Hotel Stay Included</li>
+                        </ul>
+                        <div class="package-footer">
+                            <div class="price"><span class="price-label">Starting from</span><div class="price-wrapper"><span class="price-amount">&#8377;14,999</span><span class="price-per">/couple</span></div></div>
+                            <button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Honeymoon 4N/5D -->
+                <div class="package-card" data-category="honeymoon">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #e91e8c, #ff6b9d);"><span><i class="fas fa-heart"></i> Honeymoon</span></div>
+                    <div class="package-image">
+                        <img src="andaman3.jpg" alt="Honeymoon 4N5D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-heart"></i></span><span><i class="fas fa-spa"></i></span><span><i class="fas fa-cocktail"></i></span><span><i class="fas fa-hotel"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #e91e8c, #ff6b9d);">4N / 5D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3>Honeymoon Package</h3>
+                            <div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>5.0 (278 reviews)</span></div>
+                        </div>
+                        <p class="package-description">Port Blair + Havelock + Neil Island with sunset cruise and private beach experiences.</p>
+                        <div class="package-meta">
+                            <span><i class="fas fa-clock"></i> 4 Nights / 5 Days</span>
+                            <span><i class="fas fa-users"></i> Couples Only</span>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> Sunset Cruise</li>
+                            <li><i class="fas fa-check-circle"></i> Snorkeling Together</li>
+                            <li><i class="fas fa-check-circle"></i> Private Beach Dinner</li>
+                            <li><i class="fas fa-check-circle"></i> Resort Stay</li>
+                        </ul>
+                        <div class="package-footer">
+                            <div class="price"><span class="price-label">Starting from</span><div class="price-wrapper"><span class="price-amount">&#8377;18,999</span><span class="price-per">/couple</span></div></div>
+                            <button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Honeymoon 5N/6D -->
+                <div class="package-card" data-category="honeymoon">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #e91e8c, #ff6b9d);"><span><i class="fas fa-heart"></i> Honeymoon</span></div>
+                    <div class="package-image">
+                        <img src="andaman4.jpeg" alt="Honeymoon 5N6D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-heart"></i></span><span><i class="fas fa-spa"></i></span><span><i class="fas fa-cocktail"></i></span><span><i class="fas fa-hotel"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #e91e8c, #ff6b9d);">5N / 6D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3>Honeymoon Package</h3>
+                            <div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>4.9 (241 reviews)</span></div>
+                        </div>
+                        <p class="package-description">Complete romantic tour covering all major islands with luxury resort and couple activities.</p>
+                        <div class="package-meta">
+                            <span><i class="fas fa-clock"></i> 5 Nights / 6 Days</span>
+                            <span><i class="fas fa-users"></i> Couples Only</span>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> Couple Spa & Massage</li>
+                            <li><i class="fas fa-check-circle"></i> Glass Bottom Boat</li>
+                            <li><i class="fas fa-check-circle"></i> Scuba Diving</li>
+                            <li><i class="fas fa-check-circle"></i> Luxury Resort Stay</li>
+                        </ul>
+                        <div class="package-footer">
+                            <div class="price"><span class="price-label">Starting from</span><div class="price-wrapper"><span class="price-amount">&#8377;22,999</span><span class="price-per">/couple</span></div></div>
+                            <button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Honeymoon 6N/7D -->
+                <div class="package-card" data-category="honeymoon">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #e91e8c, #ff6b9d);"><span><i class="fas fa-heart"></i> Honeymoon</span></div>
+                    <div class="package-image">
+                        <img src="andaman5.jpeg" alt="Honeymoon 6N7D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-heart"></i></span><span><i class="fas fa-spa"></i></span><span><i class="fas fa-cocktail"></i></span><span><i class="fas fa-hotel"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #e91e8c, #ff6b9d);">6N / 7D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3>Honeymoon Package</h3>
+                            <div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>5.0 (198 reviews)</span></div>
+                        </div>
+                        <p class="package-description">Premium honeymoon experience with island hopping, water sports and 5-star resort stay.</p>
+                        <div class="package-meta">
+                            <span><i class="fas fa-clock"></i> 6 Nights / 7 Days</span>
+                            <span><i class="fas fa-users"></i> Couples Only</span>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> Island Hopping Tour</li>
+                            <li><i class="fas fa-check-circle"></i> Sea Walk Experience</li>
+                            <li><i class="fas fa-check-circle"></i> 5-Star Resort Stay</li>
+                            <li><i class="fas fa-check-circle"></i> All Meals Included</li>
+                        </ul>
+                        <div class="package-footer">
+                            <div class="price"><span class="price-label">Starting from</span><div class="price-wrapper"><span class="price-amount">&#8377;27,999</span><span class="price-per">/couple</span></div></div>
+                            <button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Honeymoon 7N/8D -->
+                <div class="package-card" data-category="honeymoon">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #e91e8c, #ff6b9d);"><span><i class="fas fa-heart"></i> Honeymoon</span></div>
+                    <div class="package-image">
+                        <img src="andaman6.jpeg" alt="Honeymoon 7N8D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-heart"></i></span><span><i class="fas fa-spa"></i></span><span><i class="fas fa-cocktail"></i></span><span><i class="fas fa-hotel"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #e91e8c, #ff6b9d);">7N / 8D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3>Honeymoon Package</h3>
+                            <div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>5.0 (167 reviews)</span></div>
+                        </div>
+                        <p class="package-description">Ultimate romantic escape with private villa, helicopter ride and exclusive island experiences.</p>
+                        <div class="package-meta">
+                            <span><i class="fas fa-clock"></i> 7 Nights / 8 Days</span>
+                            <span><i class="fas fa-users"></i> Couples Only</span>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> Private Villa Stay</li>
+                            <li><i class="fas fa-check-circle"></i> Helicopter Ride</li>
+                            <li><i class="fas fa-check-circle"></i> Deep Sea Diving</li>
+                            <li><i class="fas fa-check-circle"></i> All Inclusive</li>
+                        </ul>
+                        <div class="package-footer">
+                            <div class="price"><span class="price-label">Starting from</span><div class="price-wrapper"><span class="price-amount">&#8377;34,999</span><span class="price-per">/couple</span></div></div>
+                            <button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Honeymoon 8N/9D -->
+                <div class="package-card" data-category="honeymoon">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #e91e8c, #ff6b9d);"><span><i class="fas fa-heart"></i> Honeymoon</span></div>
+                    <div class="package-image">
+                        <img src="andaman7.jpeg" alt="Honeymoon 8N9D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-heart"></i></span><span><i class="fas fa-spa"></i></span><span><i class="fas fa-cocktail"></i></span><span><i class="fas fa-hotel"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #e91e8c, #ff6b9d);">8N / 9D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h3>Honeymoon Package</h3>
+                            <div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>5.0 (134 reviews)</span></div>
+                        </div>
+                        <p class="package-description">Grand honeymoon tour - all islands, all activities, all luxury. The perfect start to forever.</p>
+                        <div class="package-meta">
+                            <span><i class="fas fa-clock"></i> 8 Nights / 9 Days</span>
+                            <span><i class="fas fa-users"></i> Couples Only</span>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> All Islands Covered</li>
+                            <li><i class="fas fa-check-circle"></i> Premium Water Sports</li>
+                            <li><i class="fas fa-check-circle"></i> Luxury Villa Stay</li>
+                            <li><i class="fas fa-check-circle"></i> Personal Butler</li>
+                        </ul>
+                        <div class="package-footer">
+                            <div class="price"><span class="price-label">Starting from</span><div class="price-wrapper"><span class="price-amount">&#8377;44,999</span><span class="price-per">/couple</span></div></div>
+                            <button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Family 3N/4D -->
+                <div class="package-card" data-category="family">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #ff9800, #ffb74d);"><span><i class="fas fa-users"></i> Family</span></div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800" alt="Family 3N4D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-child"></i></span><span><i class="fas fa-umbrella-beach"></i></span><span><i class="fas fa-utensils"></i></span><span><i class="fas fa-car"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #ff9800, #ffb74d);">3N / 4D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header"><h3>Family Package</h3><div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span>4.8 (278 reviews)</span></div></div>
+                        <p class="package-description">Port Blair family tour with Cellular Jail, Ross Island and North Bay Beach.</p>
+                        <div class="package-meta"><span><i class="fas fa-clock"></i> 3 Nights / 4 Days</span><span><i class="fas fa-users"></i> 4-6 People</span></div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> Cellular Jail Tour</li>
+                            <li><i class="fas fa-check-circle"></i> Ross Island Visit</li>
+                            <li><i class="fas fa-check-circle"></i> North Bay Beach</li>
+                            <li><i class="fas fa-check-circle"></i> All Transfers Included</li>
+                        </ul>
+                        <div class="package-footer"><div class="price"></div><button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+
+                <!-- Family 4N/5D -->
+                <div class="package-card" data-category="family">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #ff9800, #ffb74d);"><span><i class="fas fa-users"></i> Family</span></div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=800" alt="Family 4N5D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-child"></i></span><span><i class="fas fa-umbrella-beach"></i></span><span><i class="fas fa-utensils"></i></span><span><i class="fas fa-car"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #ff9800, #ffb74d);">4N / 5D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header"><h3>Family Package</h3><div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span>4.8 (245 reviews)</span></div></div>
+                        <p class="package-description">Port Blair + Havelock Island with Glass Bottom Boat and Elephant Beach visit.</p>
+                        <div class="package-meta"><span><i class="fas fa-clock"></i> 4 Nights / 5 Days</span><span><i class="fas fa-users"></i> 4-6 People</span></div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> Glass Bottom Boat</li>
+                            <li><i class="fas fa-check-circle"></i> Elephant Beach Visit</li>
+                            <li><i class="fas fa-check-circle"></i> Radhanagar Beach</li>
+                            <li><i class="fas fa-check-circle"></i> Hotel Stay Included</li>
+                        </ul>
+                        <div class="package-footer"><div class="price"></div><button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+
+                <!-- Family 5N/6D -->
+                <div class="package-card" data-category="family">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #ff9800, #ffb74d);"><span><i class="fas fa-users"></i> Family</span></div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" alt="Family 5N6D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-child"></i></span><span><i class="fas fa-umbrella-beach"></i></span><span><i class="fas fa-utensils"></i></span><span><i class="fas fa-car"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #ff9800, #ffb74d);">5N / 6D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header"><h3>Family Package</h3><div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span>4.9 (210 reviews)</span></div></div>
+                        <p class="package-description">Port Blair + Havelock + Neil Island with snorkeling and kids water activities.</p>
+                        <div class="package-meta"><span><i class="fas fa-clock"></i> 5 Nights / 6 Days</span><span><i class="fas fa-users"></i> 4-6 People</span></div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> Neil Island Visit</li>
+                            <li><i class="fas fa-check-circle"></i> Snorkeling for Kids</li>
+                            <li><i class="fas fa-check-circle"></i> Light & Sound Show</li>
+                            <li><i class="fas fa-check-circle"></i> All Meals Included</li>
+                        </ul>
+                        <div class="package-footer"><div class="price"></div><button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+
+                <!-- Family 6N/7D -->
+                <div class="package-card" data-category="family">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #ff9800, #ffb74d);"><span><i class="fas fa-users"></i> Family</span></div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800" alt="Family 6N7D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-child"></i></span><span><i class="fas fa-umbrella-beach"></i></span><span><i class="fas fa-utensils"></i></span><span><i class="fas fa-car"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #ff9800, #ffb74d);">6N / 7D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header"><h3>Family Package</h3><div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>4.9 (187 reviews)</span></div></div>
+                        <p class="package-description">Complete family island tour with adventure activities and comfortable resort stays.</p>
+                        <div class="package-meta"><span><i class="fas fa-clock"></i> 6 Nights / 7 Days</span><span><i class="fas fa-users"></i> 4-8 People</span></div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> All Major Islands</li>
+                            <li><i class="fas fa-check-circle"></i> Sea Walk Experience</li>
+                            <li><i class="fas fa-check-circle"></i> Banana Boat Ride</li>
+                            <li><i class="fas fa-check-circle"></i> Resort Stay</li>
+                        </ul>
+                        <div class="package-footer"><div class="price"></div><button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+
+                <!-- Family 7N/8D -->
+                <div class="package-card" data-category="family">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #ff9800, #ffb74d);"><span><i class="fas fa-users"></i> Family</span></div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800" alt="Family 7N8D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-child"></i></span><span><i class="fas fa-umbrella-beach"></i></span><span><i class="fas fa-utensils"></i></span><span><i class="fas fa-car"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #ff9800, #ffb74d);">7N / 8D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header"><h3>Family Package</h3><div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>5.0 (156 reviews)</span></div></div>
+                        <p class="package-description">Premium family vacation with luxury hotels, private transfers and exclusive activities.</p>
+                        <div class="package-meta"><span><i class="fas fa-clock"></i> 7 Nights / 8 Days</span><span><i class="fas fa-users"></i> 4-8 People</span></div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> Luxury Hotel Stay</li>
+                            <li><i class="fas fa-check-circle"></i> Private Transfers</li>
+                            <li><i class="fas fa-check-circle"></i> All Water Sports</li>
+                            <li><i class="fas fa-check-circle"></i> Dedicated Guide</li>
+                        </ul>
+                        <div class="package-footer"><div class="price"></div><button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+
+                <!-- Family 8N/9D -->
+                <div class="package-card" data-category="family">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #ff9800, #ffb74d);"><span><i class="fas fa-users"></i> Family</span></div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Family 8N9D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-child"></i></span><span><i class="fas fa-umbrella-beach"></i></span><span><i class="fas fa-utensils"></i></span><span><i class="fas fa-car"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #ff9800, #ffb74d);">8N / 9D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header"><h3>Family Package</h3><div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>5.0 (123 reviews)</span></div></div>
+                        <p class="package-description">Grand family Andaman tour - every island, every activity, every memory covered.</p>
+                        <div class="package-meta"><span><i class="fas fa-clock"></i> 8 Nights / 9 Days</span><span><i class="fas fa-users"></i> 4-10 People</span></div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> All Islands Covered</li>
+                            <li><i class="fas fa-check-circle"></i> Kids Special Activities</li>
+                            <li><i class="fas fa-check-circle"></i> 5-Star Hotel Stay</li>
+                            <li><i class="fas fa-check-circle"></i> All Inclusive</li>
+                        </ul>
+                        <div class="package-footer"><div class="price"></div><button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+
+                <!-- Group 3N/4D -->
+                <div class="package-card" data-category="group">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #9c27b0, #ba68c8);"><span><i class="fas fa-user-friends"></i> Group</span></div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=800" alt="Group 3N4D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-user-friends"></i></span><span><i class="fas fa-ship"></i></span><span><i class="fas fa-camera"></i></span><span><i class="fas fa-music"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #9c27b0, #ba68c8);">3N / 4D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header"><h3>Group Package</h3><div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>4.9 (195 reviews)</span></div></div>
+                        <p class="package-description">Port Blair group tour with special discounts for college trips and friend groups.</p>
+                        <div class="package-meta"><span><i class="fas fa-clock"></i> 3 Nights / 4 Days</span><span><i class="fas fa-users"></i> 10+ People</span></div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> Special Group Discount</li>
+                            <li><i class="fas fa-check-circle"></i> Cellular Jail Tour</li>
+                            <li><i class="fas fa-check-circle"></i> Ross Island Visit</li>
+                            <li><i class="fas fa-check-circle"></i> Group Ferry Booking</li>
+                        </ul>
+                        <div class="package-footer"><div class="price"></div><button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+
+                <!-- Group 5N/6D -->
+                <div class="package-card" data-category="group">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #9c27b0, #ba68c8);"><span><i class="fas fa-user-friends"></i> Group</span></div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" alt="Group 5N6D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-user-friends"></i></span><span><i class="fas fa-ship"></i></span><span><i class="fas fa-camera"></i></span><span><i class="fas fa-music"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #9c27b0, #ba68c8);">5N / 6D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header"><h3>Group Package</h3><div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>4.8 (167 reviews)</span></div></div>
+                        <p class="package-description">Port Blair + Havelock Island group adventure with water sports and group activities.</p>
+                        <div class="package-meta"><span><i class="fas fa-clock"></i> 5 Nights / 6 Days</span><span><i class="fas fa-users"></i> 10+ People</span></div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> Dedicated Tour Manager</li>
+                            <li><i class="fas fa-check-circle"></i> Group Water Sports</li>
+                            <li><i class="fas fa-check-circle"></i> Radhanagar Beach</li>
+                            <li><i class="fas fa-check-circle"></i> All Islands Covered</li>
+                        </ul>
+                        <div class="package-footer"><div class="price"></div><button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+
+                <!-- Group 7N/8D -->
+                <div class="package-card" data-category="group">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #9c27b0, #ba68c8);"><span><i class="fas fa-user-friends"></i> Group</span></div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800" alt="Group 7N8D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-user-friends"></i></span><span><i class="fas fa-ship"></i></span><span><i class="fas fa-camera"></i></span><span><i class="fas fa-music"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #9c27b0, #ba68c8);">7N / 8D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header"><h3>Group Package</h3><div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>5.0 (134 reviews)</span></div></div>
+                        <p class="package-description">Complete group Andaman experience with all islands, activities and maximum group discounts.</p>
+                        <div class="package-meta"><span><i class="fas fa-clock"></i> 7 Nights / 8 Days</span><span><i class="fas fa-users"></i> 15+ People</span></div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> Maximum Group Discount</li>
+                            <li><i class="fas fa-check-circle"></i> All Major Islands</li>
+                            <li><i class="fas fa-check-circle"></i> Group Adventure Sports</li>
+                            <li><i class="fas fa-check-circle"></i> Special Group Events</li>
+                        </ul>
+                        <div class="package-footer"><div class="price"></div><button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+
+                <!-- LTC 3N/4D -->
+                <div class="package-card" data-category="ltc">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #1565c0, #42a5f5);"><span><i class="fas fa-id-card"></i> LTC</span></div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800" alt="LTC 3N4D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-id-card"></i></span><span><i class="fas fa-file-invoice"></i></span><span><i class="fas fa-hotel"></i></span><span><i class="fas fa-plane"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #1565c0, #42a5f5);">3N / 4D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header"><h3>LTC Package</h3><div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span>4.7 (143 reviews)</span></div></div>
+                        <p class="package-description">Port Blair LTC tour with all government approved hotels and complete documentation.</p>
+                        <div class="package-meta"><span><i class="fas fa-clock"></i> 3 Nights / 4 Days</span><span><i class="fas fa-users"></i> Family</span></div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> LTC Bills Provided</li>
+                            <li><i class="fas fa-check-circle"></i> Govt. Approved Hotels</li>
+                            <li><i class="fas fa-check-circle"></i> Cellular Jail Tour</li>
+                            <li><i class="fas fa-check-circle"></i> Complete Documentation</li>
+                        </ul>
+                        <div class="package-footer"><div class="price"></div><button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+
+                <!-- LTC 5N/6D -->
+                <div class="package-card" data-category="ltc">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #1565c0, #42a5f5);"><span><i class="fas fa-id-card"></i> LTC</span></div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" alt="LTC 5N6D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-id-card"></i></span><span><i class="fas fa-file-invoice"></i></span><span><i class="fas fa-hotel"></i></span><span><i class="fas fa-plane"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #1565c0, #42a5f5);">5N / 6D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header"><h3>LTC Package</h3><div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span>4.8 (112 reviews)</span></div></div>
+                        <p class="package-description">Port Blair + Havelock LTC package with air ticket booking and government approved stays.</p>
+                        <div class="package-meta"><span><i class="fas fa-clock"></i> 5 Nights / 6 Days</span><span><i class="fas fa-users"></i> Family</span></div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> Air Ticket Booking</li>
+                            <li><i class="fas fa-check-circle"></i> Havelock Island Visit</li>
+                            <li><i class="fas fa-check-circle"></i> All LTC Documentation</li>
+                            <li><i class="fas fa-check-circle"></i> Government Rates</li>
+                        </ul>
+                        <div class="package-footer"><div class="price"></div><button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+
+                <!-- LTC 7N/8D -->
+                <div class="package-card" data-category="ltc">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #1565c0, #42a5f5);"><span><i class="fas fa-id-card"></i> LTC</span></div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800" alt="LTC 7N8D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-id-card"></i></span><span><i class="fas fa-file-invoice"></i></span><span><i class="fas fa-hotel"></i></span><span><i class="fas fa-plane"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #1565c0, #42a5f5);">7N / 8D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header"><h3>LTC Package</h3><div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>4.9 (89 reviews)</span></div></div>
+                        <p class="package-description">Complete LTC Andaman tour covering all major islands with full government compliance.</p>
+                        <div class="package-meta"><span><i class="fas fa-clock"></i> 7 Nights / 8 Days</span><span><i class="fas fa-users"></i> Family</span></div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> All Islands Covered</li>
+                            <li><i class="fas fa-check-circle"></i> Complete LTC Support</li>
+                            <li><i class="fas fa-check-circle"></i> Government Certified</li>
+                            <li><i class="fas fa-check-circle"></i> Full Documentation</li>
+                        </ul>
+                        <div class="package-footer"><div class="price"></div><button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+
+                <!-- Budget 3N/4D -->
+                <div class="package-card" data-category="budget">
+                    <div class="package-ribbon"><span><i class="fas fa-wallet"></i> Budget</span></div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Budget 3N4D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-swimming-pool"></i></span><span><i class="fas fa-utensils"></i></span><span><i class="fas fa-wifi"></i></span><span><i class="fas fa-car"></i></span></div></div>
+                        <div class="package-badge popular">3N / 4D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header"><h3>Budget Package</h3><div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span>4.8 (256 reviews)</span></div></div>
+                        <p class="package-description">Affordable Port Blair tour with basic accommodation and essential sightseeing.</p>
+                        <div class="package-meta"><span><i class="fas fa-clock"></i> 3 Nights / 4 Days</span><span><i class="fas fa-users"></i> 2-6 People</span></div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> Cellular Jail Visit</li>
+                            <li><i class="fas fa-check-circle"></i> Ross Island Tour</li>
+                            <li><i class="fas fa-check-circle"></i> Budget Hotel Stay</li>
+                            <li><i class="fas fa-check-circle"></i> Basic Transfers</li>
+                        </ul>
+                        <div class="package-footer"><div class="price"></div><button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+
+                <!-- Budget 5N/6D -->
+                <div class="package-card" data-category="budget">
+                    <div class="package-ribbon best-value"><span><i class="fas fa-tag"></i> Budget</span></div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1589197331516-6c0f1b8b3a0c?w=800" alt="Budget 5N6D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-monument"></i></span><span><i class="fas fa-utensils"></i></span><span><i class="fas fa-camera"></i></span><span><i class="fas fa-ship"></i></span></div></div>
+                        <div class="package-badge value">5N / 6D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header"><h3>Budget Package</h3><div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>5.0 (189 reviews)</span></div></div>
+                        <p class="package-description">Port Blair + Havelock budget tour with affordable stays and essential island experiences.</p>
+                        <div class="package-meta"><span><i class="fas fa-clock"></i> 5 Nights / 6 Days</span><span><i class="fas fa-users"></i> 2-8 People</span></div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> Radhanagar Beach</li>
+                            <li><i class="fas fa-check-circle"></i> Glass Bottom Boat</li>
+                            <li><i class="fas fa-check-circle"></i> Budget Accommodation</li>
+                            <li><i class="fas fa-check-circle"></i> Ferry Transfers</li>
+                        </ul>
+                        <div class="package-footer"><div class="price"></div><button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+
+                <!-- Budget 7N/8D -->
+                <div class="package-card" data-category="budget">
+                    <div class="package-ribbon best-value"><span><i class="fas fa-wallet"></i> Budget</span></div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Budget 7N8D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-hotel"></i></span><span><i class="fas fa-cocktail"></i></span><span><i class="fas fa-spa"></i></span><span><i class="fas fa-plane"></i></span></div></div>
+                        <div class="package-badge luxury">7N / 8D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header"><h3>Budget Package</h3><div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>4.9 (342 reviews)</span></div></div>
+                        <p class="package-description">Complete budget Andaman tour covering all major islands with affordable pricing.</p>
+                        <div class="package-meta"><span><i class="fas fa-clock"></i> 7 Nights / 8 Days</span><span><i class="fas fa-users"></i> 2-4 People</span></div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> All Islands Covered</li>
+                            <li><i class="fas fa-check-circle"></i> Basic Water Sports</li>
+                            <li><i class="fas fa-check-circle"></i> Budget Hotels</li>
+                            <li><i class="fas fa-check-circle"></i> All Transfers</li>
+                        </ul>
+                        <div class="package-footer"><div class="price"></div><button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+            </div>
+            
+                <!-- Corporate 3N/4D -->
+                <div class="package-card" data-category="corporate">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #37474f, #78909c);"><span><i class="fas fa-briefcase"></i> Corporate</span></div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800" alt="Corporate 3N4D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-briefcase"></i></span><span><i class="fas fa-handshake"></i></span><span><i class="fas fa-hotel"></i></span><span><i class="fas fa-wifi"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #37474f, #78909c);">3N / 4D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header"><h3>Corporate Package</h3><div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>4.9 (87 reviews)</span></div></div>
+                        <p class="package-description">Short corporate retreat with team building activities and business facilities.</p>
+                        <div class="package-meta"><span><i class="fas fa-clock"></i> 3 Nights / 4 Days</span><span><i class="fas fa-users"></i> 15+ People</span></div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> Team Building Activities</li>
+                            <li><i class="fas fa-check-circle"></i> Conference Hall</li>
+                            <li><i class="fas fa-check-circle"></i> Business Hotels</li>
+                            <li><i class="fas fa-check-circle"></i> GST Invoice</li>
+                        </ul>
+                        <div class="package-footer"><div class="price"></div><button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+
+                <!-- Corporate 5N/6D -->
+                <div class="package-card" data-category="corporate">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #37474f, #78909c);"><span><i class="fas fa-briefcase"></i> Corporate</span></div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=800" alt="Corporate 5N6D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-briefcase"></i></span><span><i class="fas fa-handshake"></i></span><span><i class="fas fa-hotel"></i></span><span><i class="fas fa-wifi"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #37474f, #78909c);">5N / 6D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header"><h3>Corporate Package</h3><div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>4.8 (65 reviews)</span></div></div>
+                        <p class="package-description">Extended corporate outing with island visits and professional team activities.</p>
+                        <div class="package-meta"><span><i class="fas fa-clock"></i> 5 Nights / 6 Days</span><span><i class="fas fa-users"></i> 15+ People</span></div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> Island Team Building</li>
+                            <li><i class="fas fa-check-circle"></i> Business Facilities</li>
+                            <li><i class="fas fa-check-circle"></i> Corporate Rates</li>
+                            <li><i class="fas fa-check-circle"></i> Professional Support</li>
+                        </ul>
+                        <div class="package-footer"><div class="price"></div><button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+
+                <!-- Corporate 7N/8D -->
+                <div class="package-card" data-category="corporate">
+                    <div class="package-ribbon" style="background: linear-gradient(135deg, #37474f, #78909c);"><span><i class="fas fa-briefcase"></i> Corporate</span></div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800" alt="Corporate 7N8D">
+                        <div class="package-overlay"><div class="package-icons"><span><i class="fas fa-briefcase"></i></span><span><i class="fas fa-handshake"></i></span><span><i class="fas fa-hotel"></i></span><span><i class="fas fa-wifi"></i></span></div></div>
+                        <div class="package-badge" style="background: linear-gradient(135deg, #37474f, #78909c);">7N / 8D</div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header"><h3>Corporate Package</h3><div class="package-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>5.0 (43 reviews)</span></div></div>
+                        <p class="package-description">Complete corporate retreat covering all islands with premium business services.</p>
+                        <div class="package-meta"><span><i class="fas fa-clock"></i> 7 Nights / 8 Days</span><span><i class="fas fa-users"></i> 20+ People</span></div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check-circle"></i> All Islands Corporate Tour</li>
+                            <li><i class="fas fa-check-circle"></i> Premium Business Services</li>
+                            <li><i class="fas fa-check-circle"></i> Executive Accommodation</li>
+                            <li><i class="fas fa-check-circle"></i> Complete Corporate Support</li>
+                        </ul>
+                        <div class="package-footer"><div class="price"></div><button class="btn-book"><span>Book Now</span><i class="fas fa-arrow-right"></i></button></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="packages-cta">
+                <p>Can't find what you're looking for?</p>
+                <a href="#contact" class="btn-custom-package">
+                    <i class="fas fa-magic"></i> Create Custom Package
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations -->
+    <section id="destinations" class="destinations">
+        <div class="destinations-bg-pattern">
+            <div class="pattern-dot"></div>
+            <div class="pattern-dot"></div>
+            <div class="pattern-dot"></div>
+            <div class="pattern-dot"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fas fa-map-marked-alt"></i> Explore Paradise</span>
+                <h2>Top Destinations</h2>
+                <p>Explore the Most Beautiful Places in Andaman</p>
+                <div class="section-divider">
+                    <span></span>
+                    <i class="fas fa-anchor"></i>
+                    <span></span>
+                </div>
+            </div>
+            
+
+            <div class="destination-grid">
+                <div class="destination-card featured" data-category="beaches">
+                    <div class="destination-image">
+                        <img src="andaman8.jpeg" alt="Havelock Island">
+                        <div class="destination-badge featured">Featured</div>
+                        <div class="destination-rating"><i class="fas fa-star"></i><span>4.9</span></div>
+                    </div>
+                    <div class="destination-overlay">
+                        <div class="destination-info">
+                            <div class="destination-header">
+                                <h3>Havelock Island</h3>
+                                <span class="destination-tag">Asia's Best Beach</span>
+                            </div>
+                            <p class="destination-description">Famous for Radhanagar Beach and crystal clear waters perfect for water sports.</p>
+                            <div class="destination-features">
+                                <span><i class="fas fa-swimming-pool"></i> Swimming</span>
+                                <span><i class="fas fa-fish"></i> Scuba Diving</span>
+                                <span><i class="fas fa-sun"></i> Sunset Views</span>
+                            </div>
+                            <div class="destination-footer">
+                                <div class="destination-location"><i class="fas fa-map-marker-alt"></i><span>Swaraj Dweep</span></div>
+                                <button class="btn-explore"><span>Explore</span><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-category="beaches">
+                    <div class="destination-image">
+                        <img src="andaman9.jpeg" alt="Neil Island">
+                        <div class="destination-badge nature">Natural Beauty</div>
+                        <div class="destination-rating"><i class="fas fa-star"></i><span>4.8</span></div>
+                    </div>
+                    <div class="destination-overlay">
+                        <div class="destination-info">
+                            <div class="destination-header">
+                                <h3>Neil Island</h3>
+                                <span class="destination-tag">Vegetable Bowl</span>
+                            </div>
+                            <p class="destination-description">Serene beaches and coral reefs perfect for snorkeling and relaxation.</p>
+                            <div class="destination-features">
+                                <span><i class="fas fa-fish"></i> Snorkeling</span>
+                                <span><i class="fas fa-leaf"></i> Nature</span>
+                                <span><i class="fas fa-water"></i> Coral Reefs</span>
+                            </div>
+                            <div class="destination-footer">
+                                <div class="destination-location"><i class="fas fa-map-marker-alt"></i><span>Shaheed Dweep</span></div>
+                                <button class="btn-explore"><span>Explore</span><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-category="adventure">
+                    <div class="destination-image">
+                        <img src="andaman10.jpeg" alt="Baratang Island">
+                        <div class="destination-badge adventure">Adventure</div>
+                        <div class="destination-rating"><i class="fas fa-star"></i><span>4.6</span></div>
+                    </div>
+                    <div class="destination-overlay">
+                        <div class="destination-info">
+                            <div class="destination-header">
+                                <h3>Baratang Island</h3>
+                                <span class="destination-tag">Limestone Caves</span>
+                            </div>
+                            <p class="destination-description">Famous for limestone caves, mud volcanoes and mangrove creeks.</p>
+                            <div class="destination-features">
+                                <span><i class="fas fa-mountain"></i> Caves</span>
+                                <span><i class="fas fa-tree"></i> Mangroves</span>
+                                <span><i class="fas fa-fire"></i> Mud Volcano</span>
+                            </div>
+                            <div class="destination-footer">
+                                <div class="destination-location"><i class="fas fa-map-marker-alt"></i><span>Middle Andaman</span></div>
+                                <button class="btn-explore"><span>Explore</span><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-category="beaches">
+                    <div class="destination-image">
+                        <img src="andaman11.jpeg" alt="Rangat">
+                        <div class="destination-badge nature">Peaceful</div>
+                        <div class="destination-rating"><i class="fas fa-star"></i><span>4.5</span></div>
+                    </div>
+                    <div class="destination-overlay">
+                        <div class="destination-info">
+                            <div class="destination-header">
+                                <h3>Rangat</h3>
+                                <span class="destination-tag">Turtle Nesting</span>
+                            </div>
+                            <p class="destination-description">Known for turtle nesting beaches and peaceful coastal environment.</p>
+                            <div class="destination-features">
+                                <span><i class="fas fa-turtle"></i> Turtle Watching</span>
+                                <span><i class="fas fa-umbrella-beach"></i> Beaches</span>
+                                <span><i class="fas fa-leaf"></i> Nature</span>
+                            </div>
+                            <div class="destination-footer">
+                                <div class="destination-location"><i class="fas fa-map-marker-alt"></i><span>Middle Andaman</span></div>
+                                <button class="btn-explore"><span>Explore</span><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-category="adventure">
+                    <div class="destination-image">
+                        <img src="andaman12.jpeg" alt="Mayabunder">
+                        <div class="destination-badge adventure">Remote</div>
+                        <div class="destination-rating"><i class="fas fa-star"></i><span>4.4</span></div>
+                    </div>
+                    <div class="destination-overlay">
+                        <div class="destination-info">
+                            <div class="destination-header">
+                                <h3>Mayabunder</h3>
+                                <span class="destination-tag">Untouched Beauty</span>
+                            </div>
+                            <p class="destination-description">Remote destination with pristine beaches and rich marine biodiversity.</p>
+                            <div class="destination-features">
+                                <span><i class="fas fa-fish"></i> Marine Life</span>
+                                <span><i class="fas fa-water"></i> Pristine Waters</span>
+                                <span><i class="fas fa-hiking"></i> Trekking</span>
+                            </div>
+                            <div class="destination-footer">
+                                <div class="destination-location"><i class="fas fa-map-marker-alt"></i><span>Middle Andaman</span></div>
+                                <button class="btn-explore"><span>Explore</span><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-category="historical">
+                    <div class="destination-image">
+                        <img src="andaman13.jpg" alt="Port Blair">
+                        <div class="destination-badge historical">Capital</div>
+                        <div class="destination-rating"><i class="fas fa-star"></i><span>4.7</span></div>
+                    </div>
+                    <div class="destination-overlay">
+                        <div class="destination-info">
+                            <div class="destination-header">
+                                <h3>Port Blair</h3>
+                                <span class="destination-tag">Capital City</span>
+                            </div>
+                            <p class="destination-description">Historic capital with Cellular Jail, museums and gateway to all islands.</p>
+                            <div class="destination-features">
+                                <span><i class="fas fa-history"></i> History</span>
+                                <span><i class="fas fa-theater-masks"></i> Light Show</span>
+                                <span><i class="fas fa-ship"></i> Ferry Hub</span>
+                            </div>
+                            <div class="destination-footer">
+                                <div class="destination-location"><i class="fas fa-map-marker-alt"></i><span>South Andaman</span></div>
+                                <button class="btn-explore"><span>Explore</span><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="destination-card" data-category="adventure">
+                    <div class="destination-image">
+                        <img src="andaman1.jpg" alt="Diglipur">
+                        <div class="destination-badge adventure">Northernmost</div>
+                        <div class="destination-rating"><i class="fas fa-star"></i><span>4.3</span></div>
+                    </div>
+                    <div class="destination-overlay">
+                        <div class="destination-info">
+                            <div class="destination-header">
+                                <h3>Diglipur</h3>
+                                <span class="destination-tag">Highest Peak</span>
+                            </div>
+                            <p class="destination-description">Northernmost point with Saddle Peak, turtle beaches and mud volcanoes.</p>
+                            <div class="destination-features">
+                                <span><i class="fas fa-mountain"></i> Saddle Peak</span>
+                                <span><i class="fas fa-turtle"></i> Turtle Beach</span>
+                                <span><i class="fas fa-fire"></i> Mud Volcano</span>
+                            </div>
+                            <div class="destination-footer">
+                                <div class="destination-location"><i class="fas fa-map-marker-alt"></i><span>North Andaman</span></div>
+                                <button class="btn-explore"><span>Explore</span><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Destinations Stats -->
+            <div class="destinations-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-island-tropical"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h4>572</h4>
+                        <p>Islands to Explore</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h4>50+</h4>
+                        <p>Beautiful Beaches</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-fish"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h4>1000+</h4>
+                        <p>Marine Species</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h4>86%</h4>
+                        <p>Forest Coverage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ferries Section -->
+    <section id="ferries" class="ferries">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fas fa-ship"></i> Ferry Services</span>
+                <h2>Ferry Options</h2>
+                <p>Choose Your Preferred Ferry Service for Island Hopping</p>
+                <div class="section-divider">
+                    <span></span>
+                    <i class="fas fa-anchor"></i>
+                    <span></span>
+                </div>
+            </div>
+            <div class="ferry-grid">
+                <div class="ferry-card">
+                    <div class="ferry-image">
+                        <img src="andaman2.jpg" alt="Makruzz Gold">
+                        <div class="ferry-badge premium">Premium</div>
+                    </div>
+                    <div class="ferry-content">
+                        <h3>Makruzz Gold</h3>
+                        <p>Luxury high-speed catamaran with AC and premium seating</p>
+                        <div class="ferry-features">
+                            <span><i class="fas fa-clock"></i> 2.5 Hours</span>
+                            <span><i class="fas fa-snowflake"></i> AC</span>
+                            <span><i class="fas fa-utensils"></i> Meals</span>
+                        </div>
+                        <button class="btn-ferry">Book Ferry</button>
+                    </div>
+                </div>
+
+                <div class="ferry-card">
+                    <div class="ferry-image">
+                        <img src="andaman3.jpg" alt="ITT Majestic">
+                        <div class="ferry-badge luxury">Luxury</div>
+                    </div>
+                    <div class="ferry-content">
+                        <h3>ITT Majestic</h3>
+                        <p>Comfortable ferry service with modern amenities</p>
+                        <div class="ferry-features">
+                            <span><i class="fas fa-clock"></i> 3 Hours</span>
+                            <span><i class="fas fa-snowflake"></i> AC</span>
+                            <span><i class="fas fa-wifi"></i> WiFi</span>
+                        </div>
+                        <button class="btn-ferry">Book Ferry</button>
+                    </div>
+                </div>
+
+                <div class="ferry-card">
+                    <div class="ferry-image">
+                        <img src="andaman4.jpeg" alt="Sea Link">
+                        <div class="ferry-badge standard">Standard</div>
+                    </div>
+                    <div class="ferry-content">
+                        <h3>Sea Link</h3>
+                        <p>Reliable ferry service connecting major islands</p>
+                        <div class="ferry-features">
+                            <span><i class="fas fa-clock"></i> 2.5 Hours</span>
+                            <span><i class="fas fa-chair"></i> Seating</span>
+                            <span><i class="fas fa-shield-alt"></i> Safe</span>
+                        </div>
+                        <button class="btn-ferry">Book Ferry</button>
+                    </div>
+                </div>
+
+                <div class="ferry-card">
+                    <div class="ferry-image">
+                        <img src="andaman5.jpeg" alt="Green Ocean">
+                        <div class="ferry-badge eco">Eco-Friendly</div>
+                    </div>
+                    <div class="ferry-content">
+                        <h3>Green Ocean</h3>
+                        <p>Eco-friendly ferry with sustainable operations</p>
+                        <div class="ferry-features">
+                            <span><i class="fas fa-clock"></i> 3.5 Hours</span>
+                            <span><i class="fas fa-leaf"></i> Eco</span>
+                            <span><i class="fas fa-users"></i> Groups</span>
+                        </div>
+                        <button class="btn-ferry">Book Ferry</button>
+                    </div>
+                </div>
+
+                <div class="ferry-card">
+                    <div class="ferry-image">
+                        <img src="andaman6.jpeg" alt="Government Ferries">
+                        <div class="ferry-badge budget">Budget</div>
+                    </div>
+                    <div class="ferry-content">
+                        <h3>Government Ferries</h3>
+                        <p>Affordable government operated ferry services</p>
+                        <div class="ferry-features">
+                            <span><i class="fas fa-clock"></i> 4 Hours</span>
+                            <span><i class="fas fa-wallet"></i> Budget</span>
+                            <span><i class="fas fa-id-card"></i> Official</span>
+                        </div>
+                        <button class="btn-ferry">Book Ferry</button>
+                    </div>
+                </div>
+
+                <div class="ferry-card">
+                    <div class="ferry-image">
+                        <img src="andaman7.jpeg" alt="MV Makruzz">
+                        <div class="ferry-badge popular">Popular</div>
+                    </div>
+                    <div class="ferry-content">
+                        <h3>MV Makruzz</h3>
+                        <p>Most popular ferry service with excellent reviews</p>
+                        <div class="ferry-features">
+                            <span><i class="fas fa-clock"></i> 2 Hours</span>
+                            <span><i class="fas fa-star"></i> Rated</span>
+                            <span><i class="fas fa-heart"></i> Popular</span>
+                        </div>
+                        <button class="btn-ferry">Book Ferry</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fas fa-water"></i> Water Adventures</span>
+                <h2>Water Activities</h2>
+                <p>Experience Thrilling Water Sports and Adventures</p>
+                <div class="section-divider">
+                    <span></span>
+                    <i class="fas fa-fish"></i>
+                    <span></span>
+                </div>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-image">
+                        <img src="speed boat ride.jpeg" alt="Speed Boat Ride">
+                        <div class="activity-badge adventure">Adventure</div>
+                        <div class="activity-overlay">
+                            <div class="activity-icon">
+                                <i class="fas fa-ship"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-content">
+                        <h3>Speed Boat Ride</h3>
+                        <p>High-speed boat rides across crystal clear waters with stunning island views</p>
+                        <div class="activity-features">
+                            <span><i class="fas fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-tachometer-alt"></i> High Speed</span>
+                            <span><i class="fas fa-camera"></i> Scenic</span>
+                        </div>
+                        <div class="activity-footer">
+                            <div class="activity-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span>4.8 (156)</span>
+                            </div>
+                            <button class="btn-activity">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-image">
+                        <img src="sofa ride.jpeg" alt="Sofa Ride">
+                        <div class="activity-badge fun">Fun</div>
+                        <div class="activity-overlay">
+                            <div class="activity-icon">
+                                <i class="fas fa-couch"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-content">
+                        <h3>Sofa Ride</h3>
+                        <p>Exciting inflatable sofa ride pulled by speedboat for ultimate water fun</p>
+                        <div class="activity-features">
+                            <span><i class="fas fa-clock"></i> 15 Minutes</span>
+                            <span><i class="fas fa-users"></i> 2-4 People</span>
+                            <span><i class="fas fa-laugh"></i> Fun</span>
+                        </div>
+                        <div class="activity-footer">
+                            <div class="activity-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                <span>4.7 (203)</span>
+                            </div>
+                            <button class="btn-activity">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-image">
+                        <img src="scuba diving.jpeg" alt="Scuba Diving">
+                        <div class="activity-badge premium">Premium</div>
+                        <div class="activity-overlay">
+                            <div class="activity-icon">
+                                <i class="fas fa-swimmer"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-content">
+                        <h3>Scuba Diving</h3>
+                        <p>Explore underwater coral reefs and marine life with certified instructors</p>
+                        <div class="activity-features">
+                            <span><i class="fas fa-clock"></i> 45 Minutes</span>
+                            <span><i class="fas fa-fish"></i> Marine Life</span>
+                            <span><i class="fas fa-certificate"></i> Certified</span>
+                        </div>
+                        <div class="activity-footer">
+                            <div class="activity-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span>4.9 (287)</span>
+                            </div>
+                            <button class="btn-activity">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fas fa-concierge-bell"></i> Complete Solutions</span>
+                <h2>Our Services</h2>
+                <p>Comprehensive Travel Services for Your Perfect Vacation</p>
+                <div class="section-divider">
+                    <span></span>
+                    <i class="fas fa-star"></i>
+                    <span></span>
+                </div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-binoculars"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Sightseeing Booking</h3>
+                        <p>Guided tours to all major attractions and hidden gems of Andaman Islands</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Professional Guides</li>
+                            <li><i class="fas fa-check"></i> All Major Attractions</li>
+                            <li><i class="fas fa-check"></i> Transportation Included</li>
+                            <li><i class="fas fa-check"></i> Flexible Timings</li>
+                        </ul>
+                        <button class="btn-service">Book Sightseeing</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Cruise Bookings</h3>
+                        <p>Luxury cruise experiences with sunset dinners and island hopping adventures</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Sunset Cruises</li>
+                            <li><i class="fas fa-check"></i> Dinner Cruises</li>
+                            <li><i class="fas fa-check"></i> Island Hopping</li>
+                            <li><i class="fas fa-check"></i> Private Charters</li>
+                        </ul>
+                        <button class="btn-service">Book Cruise</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Hotels & Resorts Bookings</h3>
+                        <p>Premium accommodations from budget stays to luxury beach resorts</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Budget to Luxury</li>
+                            <li><i class="fas fa-check"></i> Beach Front Properties</li>
+                            <li><i class="fas fa-check"></i> Best Rate Guarantee</li>
+                            <li><i class="fas fa-check"></i> Instant Confirmation</li>
+                        </ul>
+                        <button class="btn-service">Book Hotels</button>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Flight Booking</h3>
+                        <p>Convenient flight bookings to Port Blair with best prices and flexible options</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Best Flight Deals</li>
+                            <li><i class="fas fa-check"></i> Multiple Airlines</li>
+                            <li><i class="fas fa-check"></i> Flexible Booking</li>
+                            <li><i class="fas fa-check"></i> 24/7 Support</li>
+                        </ul>
+                        <button class="btn-service">Book Flights</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Book Your Dream Holiday Today</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+91 7605010054</p>
+                        <p>+91 9332050800</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>booking@roamandaman.com</p>
+                        <p>info@roamandaman.com</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Address</h3>
+                        <p>New Pahargaon, Near Karpagam Bakery</p>
+                        <p>Sri Vijaya Puram (Port Blair)</p>
+                        <p>South Andaman - 744103</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Full Name *" required>
+                    <input type="email" placeholder="Email Address *" required>
+                    <input type="tel" placeholder="Phone Number *" required>
+                    <textarea placeholder="Address *" rows="2" required></textarea>
+                    
+                    <select required>
+                        <option value="">Select Package Type *</option>
+                        <option value="honeymoon">Honeymoon Package</option>
+                        <option value="family">Family Package</option>
+                        <option value="group">Group Package</option>
+                        <option value="ltc">LTC Package</option>
+                        <option value="budget">Budget Package</option>
+                        <option value="corporate">Corporate Package</option>
+                    </select>
+                    
+                    <select required>
+                        <option value="">Select Package Duration *</option>
+                        <option value="3n4d">3 Nights / 4 Days</option>
+                        <option value="4n5d">4 Nights / 5 Days</option>
+                        <option value="5n6d">5 Nights / 6 Days</option>
+                        <option value="6n7d">6 Nights / 7 Days</option>
+                        <option value="7n8d">7 Nights / 8 Days</option>
+                        <option value="8n9d">8 Nights / 9 Days</option>
+                    </select>
+                    
+                    <input type="date" placeholder="Travel Date *" required>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Number of Adults *</label>
+                            <select required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10+">10+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Number of Children</label>
+                            <select>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6+">6+</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <input type="text" placeholder="Preferred Budget (Optional)">
+                    <textarea placeholder="Special Requests (Optional)" rows="3"></textarea>
+                    
+                    <button type="submit" class="btn-submit">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixed Icons -->
+    <div class="fixed-icons">
+        <a href="https://wa.me/917605010054" target="_blank" class="whatsapp-icon" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <button class="scroll-to-top" title="Back to Top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-umbrella-beach"></i>
+                        <span>RoamAndaman</span>
+                    </div>
+                    <p>Andaman & Nicobar's most trusted tour company. We make your vacations memorable and unforgettable.</p>
+                    <div class="footer-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>5000+</h4>
+                                <p>Happy Travelers</p>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <h4>4.9/5</h4>
+                                <p>Rating</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4><i class="fas fa-link"></i> Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#packages"><i class="fas fa-chevron-right"></i> Packages</a></li>
+                        <li><a href="#destinations"><i class="fas fa-chevron-right"></i> Destinations</a></li>
+                        <li><a href="#activities"><i class="fas fa-chevron-right"></i> Activities</a></li>
+                        <li><a href="#ferries"><i class="fas fa-chevron-right"></i> Ferries</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4><i class="fas fa-concierge-bell"></i> Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Hotel Booking</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Flight Tickets</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Water Sports</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Tour Guide</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Car Rental</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-contact">
+                    <h4><i class="fas fa-envelope-open-text"></i> Get In Touch</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <p>+91 7605010054</p>
+                            <p>+91 9332050800</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p>booking@roamandaman.com</p>
+                            <p>info@roamandaman.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p>New Pahargaon, Near Karpagam Bakery</p>
+                            <p>Sri Vijaya Puram (Port Blair), South Andaman</p>
+                            <p>Andaman & Nicobar Islands – 744103</p>
+                            <p>Land Line: +91 03192-243901</p>
+                            <p>GSTN: 35ABIPU3191P1ZV</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="footer-social">
+                <h4>Follow Us On Social Media</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="social-link twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="#" class="social-link youtube">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                    <a href="#" class="social-link whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 RoamAndaman. All Rights Reserved. Made with <i class="fas fa-heart"></i> in India</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
