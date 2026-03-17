@@ -90,8 +90,8 @@ body {
 
 .logo-image {
     width: 85px;
-    height: 55px;
-    border-radius: 8px;
+    height: 85px;
+    border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--accent-color);
     transition: all 0.3s ease;
