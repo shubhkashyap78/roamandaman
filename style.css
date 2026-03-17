@@ -88,6 +88,20 @@ body {
     color: white;
 }
 
+.logo-image {
+    width: 85px;
+    height: 55px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.logo:hover .logo-image {
+    transform: scale(1.1) rotate(360deg);
+    border-color: white;
+}
+
 .logo i {
     color: var(--accent-color);
 }
@@ -2468,6 +2482,20 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
     color: white;
+}
+
+.footer-logo-image {
+    width: 340px;
+    height: 55px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.footer-logo:hover .footer-logo-image {
+    transform: scale(1.1) rotate(360deg);
+    border-color: white;
 }
 
 .footer-logo i {

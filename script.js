@@ -166,14 +166,121 @@ window.addEventListener('scroll', () => {
 });
 
 // Book Now Button Click Handler
-document.querySelectorAll('.btn-book').forEach(button => {
-    button.addEventListener('click', function() {
-        const packageName = this.closest('.package-card').querySelector('h3').textContent;
-        alert(`Thank you! You want to book "${packageName}"\n\nOur team will contact you soon.\n\nOr call us: +91 98765 43210`);
+document.querySelectorAll('.btn-book, .btn-ferry, .btn-activity, .btn-service').forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        let cardName = '';
+        let cardType = '';
+        
+        // Get card details based on button type
+        if (this.classList.contains('btn-book')) {
+            const packageCard = this.closest('.package-card');
+            cardName = packageCard.querySelector('h3').textContent;
+            const duration = packageCard.querySelector('.package-badge').textContent;
+            cardType = 'Package';
+            cardName = `${cardName} (${duration})`;
+        } else if (this.classList.contains('btn-ferry')) {
+            const ferryCard = this.closest('.ferry-card');
+            cardName = ferryCard.querySelector('h3').textContent;
+            cardType = 'Ferry';
+        } else if (this.classList.contains('btn-activity')) {
+            const activityCard = this.closest('.activity-card');
+            cardName = activityCard.querySelector('h3').textContent;
+            cardType = 'Activity';
+        } else if (this.classList.contains('btn-service')) {
+            const serviceCard = this.closest('.service-card');
+            cardName = serviceCard.querySelector('h3').textContent;
+            cardType = 'Service';
+        }
+        
+        // Store selection in sessionStorage
+        sessionStorage.setItem('selectedCard', cardName);
+        sessionStorage.setItem('selectedType', cardType);
         
         // Scroll to contact form
         document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+        
+        // Auto-fill contact form after scroll
+        setTimeout(() => {
+            fillContactForm(cardName, cardType);
+        }, 1000);
     });
+});
+
+// Destination Explore Button Click Handler
+document.querySelectorAll('.btn-explore').forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const destinationCard = this.closest('.destination-card');
+        const destinationName = destinationCard.querySelector('h3').textContent;
+        
+        // Store selection
+        sessionStorage.setItem('selectedCard', `${destinationName} Tour`);
+        sessionStorage.setItem('selectedType', 'Destination');
+        
+        // Scroll to contact form
+        document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+        
+        setTimeout(() => {
+            fillContactForm(`${destinationName} Tour`, 'Destination');
+        }, 1000);
+    });
+});
+
+// Function to fill contact form
+function fillContactForm(cardName, cardType) {
+    const contactForm = document.querySelector('.contact-form');
+    const packageSelect = contactForm.querySelector('select');
+    const messageTextarea = contactForm.querySelector('textarea[placeholder*="Special Requests"]');
+    
+    // Set package type if it matches
+    if (cardType === 'Package') {
+        const packageName = cardName.toLowerCase();
+        if (packageName.includes('honeymoon')) {
+            packageSelect.value = 'honeymoon';
+        } else if (packageName.includes('family')) {
+            packageSelect.value = 'family';
+        } else if (packageName.includes('group')) {
+            packageSelect.value = 'group';
+        } else if (packageName.includes('ltc')) {
+            packageSelect.value = 'ltc';
+        } else if (packageName.includes('budget')) {
+            packageSelect.value = 'budget';
+        } else if (packageName.includes('corporate')) {
+            packageSelect.value = 'corporate';
+        }
+    }
+    
+    // Auto-fill message with selected item
+    const currentMessage = messageTextarea.value;
+    const newMessage = `Interested in: ${cardName}\n\n${currentMessage}`;
+    messageTextarea.value = newMessage;
+    
+    // Highlight the form
+    contactForm.style.border = '3px solid var(--accent-color)';
+    contactForm.style.boxShadow = '0 0 20px rgba(255, 107, 53, 0.3)';
+    
+    setTimeout(() => {
+        contactForm.style.border = '';
+        contactForm.style.boxShadow = 'var(--shadow)';
+    }, 3000);
+}
+
+// Auto-fill form on page load if there's a stored selection
+window.addEventListener('DOMContentLoaded', () => {
+    const selectedCard = sessionStorage.getItem('selectedCard');
+    const selectedType = sessionStorage.getItem('selectedType');
+    
+    if (selectedCard && selectedType) {
+        setTimeout(() => {
+            fillContactForm(selectedCard, selectedType);
+            // Clear storage after use
+            sessionStorage.removeItem('selectedCard');
+            sessionStorage.removeItem('selectedType');
+        }, 500);
+    }
 });
 
 // Contact Form Submission
@@ -340,13 +447,7 @@ document.querySelectorAll('.btn-primary, .btn-book, .btn-submit').forEach(button
     });
 });
 
-// Destination Card Hover Effect
-document.querySelectorAll('.destination-card').forEach(card => {
-    card.addEventListener('click', function() {
-        const destination = this.querySelector('h3').textContent;
-        alert(`For more information about ${destination}, contact us!\n\nCall: +91 98765 43210\nEmail: info@RoamAndaman.com`);
-    });
-});
+
 
 // Price Animation on Scroll
 const priceElements = document.querySelectorAll('.price-amount');
